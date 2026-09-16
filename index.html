@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synora — Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="stage">
+    <section id="hero" class="hero">
+      <div class="hero-video-wrap">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-fade" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-about">
+        <div class="hero-logo-row">
+          <img class="hero-wordmark" src="assets/logo.svg" alt="Synora">
+        </div>
+
+        <div class="hero-meta-row">
+          <p class="hero-tagline">Generative AI for building visual worlds with their own film score.<br>Inspired by Hans Zimmer.</p>
+
+          <dl class="hero-meta">
+            <div class="hero-meta-item">
+              <dt>Field</dt>
+              <dd>UX/UI, Web design</dd>
+            </div>
+            <div class="hero-meta-item hero-meta-item--narrow">
+              <dt>Role</dt>
+              <dd>Solo</dd>
+            </div>
+            <div class="hero-meta-item">
+              <dt>Type</dt>
+              <dd>Student project</dd>
+            </div>
+            <div class="hero-meta-item hero-meta-item--auto">
+              <dt>Year</dt>
+              <dd>2026</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="promo" class="promo reveal">
+      <div class="promo-video-wrap">
+        <video class="promo-video" controls loop playsinline>
+          <source src="assets/promo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section id="overview" class="overview reveal">
+      <p class="overview-headline">Sound isn't a finishing touch. It's <em>part</em> of the scene.</p>
+
+      <div class="overview-content">
+        <div class="overview-label-row">
+          <p class="overview-label">Challenge</p>
+          <div class="overview-connector overview-connector--link" aria-hidden="true">
+            <span class="connector-line connector-line--link-a"></span>
+            <img class="connector-icon" src="assets/icons/LinkBreak.svg" alt="">
+            <span class="connector-line connector-line--link-b"></span>
+          </div>
+          <p class="overview-label">Approach</p>
+          <div class="overview-connector overview-connector--intersect" aria-hidden="true">
+            <span class="connector-line connector-line--intersect-a"></span>
+            <img class="connector-icon" src="assets/icons/Intersect.svg" alt="">
+            <span class="connector-line connector-line--intersect-b"></span>
+          </div>
+          <p class="overview-label">Outcome</p>
+        </div>
+
+        <div class="overview-body-row">
+          <p class="overview-body">AI video tools can add sound effects, but not a musical score. Visuals and music are still made separately, and making them feel like one piece is left to the user.</p>
+          <p class="overview-body">Synora connects the prompts: what you wrote for the visuals carries into the music, and the system reads the video to match the score to its pacing.</p>
+          <p class="overview-body">A platform where visuals and music are created as one piece, so users can focus on their vision instead of fitting the two together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hans-zimmer" class="hans-zimmer reveal">
+      <div class="hz-content">
+        <div class="hz-intro">
+          <h2 class="hz-title">Hans Zimmer</h2>
+          <div class="hz-block">
+            <p class="hz-label">Who is he?</p>
+            <div class="hz-body">
+              <p>Two-time Oscar-winning film composer (The Lion King, Inception, Interstellar, Dune, Rain Man).</p>
+              <p>Zimmer often writes music before filming begins. For Interstellar, he composed from a single page Nolan gave him, before seeing any footage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hz-beliefs">
+          <p class="hz-label">Some of his beliefs</p>
+          <ul class="hz-list">
+            <li><img class="hz-icon" src="assets/icons/symbol.svg" alt=""><span>Blending orchestra and electronics</span></li>
+            <li><img class="hz-icon" src="assets/icons/symbol.svg" alt=""><span>Music that exists before the picture</span></li>
+            <li><img class="hz-icon" src="assets/icons/symbol.svg" alt=""><span>Building scores from sounds, not just melody</span></li>
+          </ul>
+        </div>
+
+        <p class="hz-label hz-closing">Each of these shaped a design decision, shown below</p>
+      </div>
+
+      <div class="hz-portrait">
+        <img src="assets/hanszimmer.webp" alt="Hans Zimmer in his studio">
+      </div>
+    </section>
+
+    <section id="research" class="research reveal">
+      <div class="research-head">
+        <h2 class="research-title">Research</h2>
+
+        <div class="research-row">
+          <div class="research-col">
+            <div class="tool-group">
+              <p class="tool-category">Visual AI Tools</p>
+              <div class="tool-grid">
+                <div class="tool-card">
+                  <div class="tool-card-media">
+                    <img class="tool-bg" src="assets/Kling.webp" alt="">
+                    <img class="tool-icon" src="assets/Kling.svg" alt="" width="34" height="32">
+                  </div>
+                  <p class="tool-card-label">Kling</p>
+                </div>
+                <div class="tool-card">
+                  <div class="tool-card-media">
+                    <img class="tool-bg" src="assets/midjourney.webp" alt="">
+                    <img class="tool-icon" src="assets/midjourney.svg" alt="" width="38" height="32">
+                  </div>
+                  <p class="tool-card-label">Midjourney</p>
+                </div>
+                <div class="tool-card">
+                  <div class="tool-card-media">
+                    <img class="tool-bg" src="assets/Higgsfield.webp" alt="">
+                    <img class="tool-icon" src="assets/higgsfield.svg" alt="" width="32" height="32">
+                  </div>
+                  <p class="tool-card-label">Higgsfield</p>
+                </div>
+              </div>
+            </div>
+            <p class="research-body">Generate strong visuals from a prompt. Some add audio, but it's sound effects, not music.</p>
+          </div>
+
+          <div class="research-connector">
+            <img src="assets/icons/LinkBreak.svg" alt="">
+          </div>
+
+          <div class="research-col">
+            <div class="tool-group">
+              <p class="tool-category">Music AI Tools</p>
+              <div class="tool-grid">
+                <div class="tool-card">
+                  <div class="tool-card-media">
+                    <img class="tool-bg" src="assets/Lyria.webp" alt="">
+                    <img class="tool-icon" src="assets/lyria.svg" alt="" width="32" height="32">
+                  </div>
+                  <p class="tool-card-label">Lyria</p>
+                </div>
+                <div class="tool-card">
+                  <div class="tool-card-media">
+                    <img class="tool-bg" src="assets/Udio.webp" alt="">
+                    <img class="tool-icon" src="assets/udio.svg" alt="" width="30" height="32">
+                  </div>
+                  <p class="tool-card-label">Udio</p>
+                </div>
+                <div class="tool-card">
+                  <div class="tool-card-media">
+                    <img class="tool-bg" src="assets/Suno.webp" alt="">
+                    <img class="tool-icon" src="assets/suno.svg" alt="" width="32" height="32">
+                  </div>
+                  <p class="tool-card-label">Suno</p>
+                </div>
+              </div>
+            </div>
+            <p class="research-body">Generate full tracks from a prompt, but without seeing the scene they're meant for.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="research-closing">Across both, the interfaces feel alike: mostly dark, neutral, and technical.<br><em>Synora</em> needed to feel more cinematic.</p>
+    </section>
+
+    <section id="ia" class="ia reveal">
+      <div class="ia-head">
+        <h2 class="ia-title">Information Architecture &amp; Flow</h2>
+        <p class="ia-subtitle">The structure follows patterns users already know from AI tools, so the attention goes to what's new:<br>The visual prompt carries into the music.</p>
+      </div>
+
+      <div class="ia-diagram">
+        <div class="ia-node ia-node--home">Home</div>
+        <div class="ia-node ia-node--explore">Explore</div>
+        <div class="ia-node ia-node--search">Search</div>
+        <div class="ia-node ia-node--view-world">View World</div>
+        <div class="ia-node ia-node--bookmarks">Bookmarks</div>
+        <div class="ia-node ia-node--create">Create</div>
+        <div class="ia-node ia-node--my-worlds">My Worlds</div>
+        <div class="ia-node ia-node--create-visual">Create Visual</div>
+        <div class="ia-node ia-node--create-sound">Create Sound</div>
+        <div class="ia-node ia-node--finish">Finish</div>
+        <div class="ia-node ia-node--save-draft">Save as Draft</div>
+        <div class="ia-node ia-node--publish">Publish</div>
+
+        <div class="ia-connector conn-home-explore"><img src="assets/diagram/home-explore.svg" alt=""></div>
+        <div class="ia-connector conn-home-create"><img src="assets/diagram/home-create.svg" alt=""></div>
+        <div class="ia-connector conn-home-bookmarks"><img src="assets/diagram/home-bookmarks.svg" alt=""></div>
+        <div class="ia-connector conn-explore-search"><img src="assets/diagram/explore-search.svg" alt=""></div>
+        <div class="ia-connector conn-explore-viewworld"><img src="assets/diagram/explore-viewworld.svg" alt=""></div>
+        <div class="ia-connector conn-create-myworlds"><img src="assets/diagram/create-myworlds.svg" alt=""></div>
+        <div class="ia-connector conn-create-createvisual"><img src="assets/diagram/create-createvisual.svg" alt=""></div>
+        <div class="ia-connector conn-createsound-finish"><img src="assets/diagram/createsound-finish.svg" alt=""></div>
+        <div class="ia-connector conn-finish-savedraft"><img src="assets/diagram/finish-savedraft.svg" alt=""></div>
+        <div class="ia-connector conn-finish-publish"><img src="assets/diagram/finish-publish.svg" alt=""></div>
+        <div class="ia-connector conn-myworlds-savedraft"><img src="assets/diagram/vector1.svg" alt=""></div>
+        <div class="ia-connector conn-line7"><img src="assets/diagram/line7.svg" alt=""></div>
+        <div class="ia-connector conn-line8"><img src="assets/diagram/line8.svg" alt=""></div>
+
+        <img class="ia-marker" src="assets/icons/symbol.svg" alt="">
+      </div>
+    </section>
+
+    <section id="screens" class="screens reveal">
+      <div class="screens-head">
+        <h2 class="screens-title">Screens Concept</h2>
+        <nav class="screens-tabs">
+          <button type="button" class="screens-tab screens-tab--active" data-screens-tab="home">Home</button>
+          <button type="button" class="screens-tab" data-screens-tab="explore">Explore</button>
+          <button type="button" class="screens-tab" data-screens-tab="create">Create</button>
+        </nav>
+      </div>
+
+      <div class="screens-body">
+        <div class="screens-toggle-row">
+          <div class="screens-toggle">
+            <button type="button" class="screens-toggle-item screens-toggle-item--before is-active" data-screens-toggle="assets/homewireframe.webp">
+              <p>Before</p>
+              <span class="screens-toggle-dot"></span>
+            </button>
+            <button type="button" class="screens-toggle-item screens-toggle-item--after" data-screens-toggle="assets/herodesign.webp">
+              <p>After</p>
+              <span class="screens-toggle-dot"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="screens-main">
+          <div class="screens-col">
+            <p class="screens-headline" id="screens-headline">Windows <em>peeking</em> into other people's worlds.</p>
+            <div class="screens-detail">
+              <div class="screens-swatch screens-swatch--vector" id="screens-swatch">
+                <img id="screens-swatch-img" src="assets/screens/home-swatch.svg" alt="">
+              </div>
+              <p class="screens-caption" id="screens-caption">The home page is a grid of windows, each showing a world someone created.<br>It shows what Synora can do, and invites people to look closer.</p>
+            </div>
+          </div>
+
+          <div class="screens-frame">
+            <img id="screens-frame-img" src="assets/homewireframe.webp" alt="Home screen wireframe">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="design-system" class="design-system reveal">
+      <div class="ds-head">
+        <h2 class="ds-title">Design System</h2>
+
+        <div class="ds-logo-wrap">
+          <div class="ds-logo-intro">
+            <p class="ds-eyebrow">Logo &amp; Symbol</p>
+            <p class="ds-body">The wordmark combines serif and sans-serif letterforms, the same fusion of acoustic and digital found in Zimmer's work. The symbol takes the O as a camera lens, with the AI spark at its center, looking into the worlds people create.</p>
+          </div>
+
+          <div class="ds-logo-row">
+            <img class="ds-logo-mark" src="assets/logo.svg" alt="Synora">
+            <span class="ds-divider" aria-hidden="true"></span>
+            <img class="ds-symbol-mark" src="assets/symbol.svg" alt="Synora symbol">
+          </div>
+        </div>
+      </div>
+
+      <div class="ds-typography">
+        <p class="ds-eyebrow">Typography</p>
+
+        <div class="ds-type-row">
+          <p class="ds-type-intro">Synora sits between film and music, handmade and artificial. <span class="ds-font-recia">Recia</span>, a serif, brings the cinematic, handmade side. Plus Jakarta Sans, a geometric sans, brings structure and a technological feel.</p>
+
+          <div class="ds-type-showcase">
+            <div class="ds-specimens">
+              <div class="ds-specimen">
+                <p class="ds-specimen-label ds-specimen-label--serif">Recia</p>
+                <p class="ds-specimen-sample ds-specimen-sample--serif">Aa</p>
+              </div>
+              <span class="ds-divider" aria-hidden="true"></span>
+              <div class="ds-specimen">
+                <p class="ds-specimen-label ds-specimen-label--sans">Plus Jakarta Sans</p>
+                <p class="ds-specimen-sample ds-specimen-sample--sans">Aa</p>
+              </div>
+            </div>
+
+            <div class="ds-type-tables">
+              <div class="ds-type-group">
+                <p class="ds-type-group-label">Display</p>
+                <div class="ds-type-table">
+                  <div class="ds-type-row2 ds-row--headline">
+                    <span>Headline</span><span>Recia</span><span>Bold</span><span>24pt</span>
+                  </div>
+                  <div class="ds-type-row2 ds-row--nickname">
+                    <span>Nickname</span><span>Plus Jakarta Sans</span><span>Regular</span><span>18pt</span>
+                  </div>
+                  <div class="ds-type-row2 ds-row--labels">
+                    <span>Labels</span><span>Recia</span><span>Regular</span><span>13pt</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ds-type-group ds-type-group--content">
+                <p class="ds-type-group-label">Content</p>
+                <div class="ds-type-table">
+                  <div class="ds-type-row2 ds-row--body">
+                    <span>Body</span><span>Plus Jakarta Sans</span><span>Regular</span><span>16pt</span>
+                  </div>
+                  <div class="ds-type-row2 ds-row--body2">
+                    <span>Body II</span><span>Plus Jakarta Sans</span><span>Regular</span><span>14pt</span>
+                  </div>
+                  <div class="ds-type-row2 ds-row--micro">
+                    <span>Micro Body</span><span>Plus Jakarta Sans</span><span>Regular</span><span>13pt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ds-colors">
+        <p class="ds-eyebrow">Colors</p>
+        <div class="ds-colors-body">
+          <p class="ds-colors-copy">Early wireframes were black and white, and felt technical and cold. I looked for a color between the warm, handmade side of a live orchestra and the cold, electronic side of synths. <br>I chose Peach for the warmth while staying soft and calm.</p>
+
+          <div class="ds-swatches">
+            <div class="ds-swatch ds-swatch--black">
+              <div class="ds-swatch-box ds-swatch-box--black"></div>
+              <div class="ds-swatch-caption">
+                <p>Black<br>#110F0F</p>
+                <p>Base</p>
+              </div>
+            </div>
+            <div class="ds-swatch ds-swatch--white">
+              <div class="ds-swatch-box ds-swatch-box--white"></div>
+              <div class="ds-swatch-caption">
+                <p>White<br>#F7F3F1</p>
+                <p>Base</p>
+              </div>
+            </div>
+            <div class="ds-swatch ds-swatch--peach">
+              <div class="ds-swatch-box ds-swatch-box--peach"></div>
+              <div class="ds-swatch-caption">
+                <p>Peach<br>#FF8A65</p>
+                <p>Accent</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ds-buttons-icons">
+        <p class="ds-eyebrow">Buttons &amp; Icons</p>
+
+        <div class="ds-bi-row">
+          <p class="ds-bi-intro">Simple outlined icons keep the interface quiet next to the worlds. Every component has light and dark versions, since the product moves between dark browsing and a light creation canvas.</p>
+
+          <div class="ds-icons-row">
+            <div class="ds-icons-col">
+              <p class="ds-icons-label">Outlined Icons</p>
+              <img class="ds-icons-outlined" src="assets/design-system/outlined-icons.svg" alt="">
+            </div>
+            <div class="ds-icons-col">
+              <p class="ds-icons-label">Filled Icons</p>
+              <div class="ds-icons-filled">
+                <div class="ds-icon-rewind">
+                  <img src="assets/design-system/play-a.svg" alt="">
+                  <img src="assets/design-system/play-b.svg" alt="">
+                </div>
+                <img class="ds-icon-play" src="assets/design-system/play-triangle.svg" alt="">
+                <img class="ds-icon-forward" src="assets/icons/Frame%20370.svg" alt="">
+                <img class="ds-icon-subtract" src="assets/icons/Subtract.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-buttons">
+          <p class="ds-buttons-label">Buttons</p>
+          <div class="ds-button-panels">
+            <div class="ds-button-panel ds-button-panel--dark">
+              <p class="ds-button-panel-label">Dark mode</p>
+              <div class="ds-button-set">
+                <div class="ds-button-sample">
+                  <div class="ds-button ds-btn--dark-default">Button</div>
+                  <p class="ds-button-caption">Default</p>
+                </div>
+                <div class="ds-button-sample">
+                  <div class="ds-button ds-btn--dark-hover">Button</div>
+                  <p class="ds-button-caption">Hover</p>
+                </div>
+                <div class="ds-button-sample ds-button-sample--narrow">
+                  <div class="ds-button ds-btn--cta">Button</div>
+                  <p class="ds-button-caption">CTA</p>
+                </div>
+                <div class="ds-button-sample ds-button-sample--narrow">
+                  <div class="ds-button ds-btn--dark-selected">Button</div>
+                  <p class="ds-button-caption">Selected</p>
+                </div>
+                <div class="ds-button-sample">
+                  <div class="ds-button ds-btn--dark-disabled">Button</div>
+                  <p class="ds-button-caption">Disabled</p>
+                </div>
+              </div>
+            </div>
+            <div class="ds-button-panel ds-button-panel--light">
+              <p class="ds-button-panel-label">Light mode</p>
+              <div class="ds-button-set">
+                <div class="ds-button-sample">
+                  <div class="ds-button ds-btn--light-default">Button</div>
+                  <p class="ds-button-caption">Default</p>
+                </div>
+                <div class="ds-button-sample">
+                  <div class="ds-button ds-btn--light-hover">Button</div>
+                  <p class="ds-button-caption">Hover</p>
+                </div>
+                <div class="ds-button-sample ds-button-sample--narrow">
+                  <div class="ds-button ds-btn--cta">Button</div>
+                  <p class="ds-button-caption">CTA</p>
+                </div>
+                <div class="ds-button-sample ds-button-sample--narrow">
+                  <div class="ds-button ds-btn--light-selected">Button</div>
+                  <p class="ds-button-caption">Selected</p>
+                </div>
+                <div class="ds-button-sample">
+                  <div class="ds-button ds-btn--light-disabled">Button</div>
+                  <p class="ds-button-caption">Disabled</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="critique" class="critique reveal">
+      <div class="critique-head">
+        <h2 class="critique-title">From Critique to Final</h2>
+
+        <div class="critique-quote-block">
+          <div class="critique-quote">
+            <div class="critique-quote-bubble">
+              <p>&ldquo;It doesn&rsquo;t look like an AI platform&rdquo;</p>
+            </div>
+            <span class="critique-quote-tail" aria-hidden="true"></span>
+          </div>
+          <p class="critique-body">In the final class presentation, the feedback was clear: people expect to enter an AI tool and start creating right away. The early version explained the idea instead of inviting people in.<br>So the structure changed: a prompt bar moved to the top of every page, navigation moved to a sidebar, and the worlds took the full screen.</p>
+        </div>
+      </div>
+
+      <div class="critique-cta-wrap">
+        <a class="critique-cta" href="https://synora.shakedgozlan.me/" target="_blank" rel="noopener">
+          <p>See it in action</p>
+        </a>
+        <p class="critique-caption">A working prototype of the final design, <br>where you can browse worlds and try the create flow.</p>
+      </div>
+    </section>
+
+    <section id="thank-you" class="thank-you reveal">
+      <h2 class="thank-you-title">Thank you!</h2>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
